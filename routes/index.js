@@ -3,7 +3,9 @@ var router = express.Router();
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "NamsteBytes channel" });
+  setTimeout(() => {
+    res.render("index", { title: "NamsteBytes channel" });
+  }, 5000);
 });
 
 module.exports = router;
